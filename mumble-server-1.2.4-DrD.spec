@@ -15,7 +15,7 @@
 %define name      mumble-server
 %define summary   Mumble is an open source voice chat software.
 %define version   1.2.4
-%define release   DrD.el6
+%define release   DrD
 %define license   GPL
 %define group     Applications/Communications
 %define source0   http://downloads.sourceforge.net/project/mumble/Mumble/1.2.4/murmur-static_x86-1.2.4.tar.bz2
