@@ -37,10 +37,11 @@ Source0:   %{source0}
 URL:       %{url}
 Prefix:    %{_prefix}
 Buildroot: %{buildroot}
+BuildArch: i386
 
 %description
 Mumble is an open source, low-latency, high quality voice chat software primarily intended for use while gaming.
-Make sure to edit your /etc/mumble-server.ini file!
+Make sure to edit your /opt/mumble-server/mumble-server-default.ini!
 Make sure to set/update your SuperUser password after starting the service with:
   /usr/local/sbin/murmurd -ini /opt/mumble-server/mumble-server-default.ini -supw
 
@@ -57,7 +58,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/opt/mumble-server
 mkdir -p %{buildroot}/usr/local/sbin
 mkdir -p %{buildroot}/etc/rc.d/init.d/
-#cp -a * %{buildroot}/opt/mumble-server/
 cp -a * %{buildroot}/opt/mumble-server/
 rm -rf %{buildroot}/opt/mumble-server/murmur.x86
 mv %{buildroot}/opt/mumble-server/murmur.ini %{buildroot}/opt/mumble-server/mumble-server.ini.example
@@ -161,7 +161,7 @@ case "\$1" in
         stop
         ;;
     status)
-        status $DAEMON
+        status \$DAEMON
         RETVAL=\$?
         ;;
     reload)
