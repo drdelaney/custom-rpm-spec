@@ -17,3 +17,8 @@ To build sources, make sure you have the following rpms installed:
 rpm-build, make, gcc (as well as other development tools)
 
 To create the rpm, simply cd into ~/rpmbuild, and run rpmbuild -ba SPECS/filename.spec.
+
+If any of these have helped you, please feel free to donate!
+BTC: 1HYN6gK4hmykT9Y7SBVMyheNKPzuq5fi3v
+LTC: LQ7dnDk327ENnduTAVioiM9RpGQS5fAKg3
+DOGE: DJihu6BcKG1XZVk4JY3c8ZeRtC6wLLbXab
